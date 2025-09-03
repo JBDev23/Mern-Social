@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import avatar from "../../assets/img/user.png"
-import { GetProfile } from '../../helpers/getProfile'
+import { GetProfile } from '../../helpers/GetProfile'
 import { Link, useParams } from 'react-router-dom'
 import { Global } from '../../helpers/Global'
 import useAuth from '../../hooks/useAuth'
