@@ -21,6 +21,7 @@
     "mongoose-paginate-v2": "^1.9.1",
     "multer": "^2.0.2",
     "multer-storage-cloudinary": "^4.0.0",
+    "serverless-http": "^4.0.0",
     "validator": "^13.15.15"
   },
   "devDependencies": {
