@@ -25,6 +25,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Cargar rutas
+app.get("/api/prueba", (req, res) => {
+    res.status(200).json({
+        status: "success",
+        message: "Mensaje enviado"
+    });
+});
+
 app.use("/api/user", UserRoutes);
 app.use("/api/publication", PublicationRoutes);
 app.use("/api/follow", FollowRoutes);
