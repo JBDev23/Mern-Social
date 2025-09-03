@@ -11,6 +11,8 @@ export const Login = () => {
 
   const {setAuth} = useAuth()
 
+  console.log(Global.url)
+
   const loginUser = async (e) => {
     e.preventDefault()
 
