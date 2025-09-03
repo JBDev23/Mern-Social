@@ -17,7 +17,11 @@ const app = express()
 const puerto = process.env.PORT || 3900
 
 // Configurar cors
-app.use(cors())
+app.use(cors({
+  origin: "https://mern-social-u5xo.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
 // Converitr datos del body a js
 app.use(express.json())
