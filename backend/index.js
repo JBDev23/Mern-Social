@@ -26,9 +26,9 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-//app.use("/api/user", UserRoutes);
-//app.use("/api/publication", PublicationRoutes);
-//app.use("/api/follow", FollowRoutes);
+app.use("/api/user", UserRoutes);
+app.use("/api/publication", PublicationRoutes);
+app.use("/api/follow", FollowRoutes);
 
 // Ruta de prueba
 app.get("/", (req, res) => {
